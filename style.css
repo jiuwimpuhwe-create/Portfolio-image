@@ -1,42 +1,112 @@
-body {
+* {
     margin: 0;
-    font-family: Arial;
+    padding: 0;
+    font-family: Arial,sans-serif;
     background: #f5f7fa;
+    
 }
-
+ body {  background: #0b0f19
+     color: white;
 /* NAVBAR */
-header {
-    background: #0a192f;
-    color: white;
-    padding: 15px;
+.navbar {
+   display: flex;
+     justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(to right, #0b0f19, #1f7a8c);
+    border-radius: 30px;
+    margin: 20px;
 }
-
-nav {
+.resume-btn {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+       .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+       .nav-links a {
+    text-decoration: none;
+    color: white;
+           /* HERO */
+.hero {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background: linear-gradient(to right, #1f7a8c, #4ecdc4);
+    border-radius: 20px;
+    margin: 20px;
 }
 
-nav ul {
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hero-text h3 {
+    margin-bottom: 20px;
+}
+
+.hire-btn {
+    padding: 10px 20px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.socials {
+    margin-top: 20px;
     display: flex;
     gap: 15px;
-    list-style: none;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 50px;
-    background: white;
-}
-
-.hero img {
-    width: 150px;
+.socials span {
+    background: black;
+    padding: 8px;
     border-radius: 50%;
+}
+
+/* IMAGE */
+.hero-image img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+/* ABOUT */
+.about {
+    background: #111827;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.about h2 {
+    margin-bottom: 15px;
+}
+     
+
+
 }
 
 .buttons {
