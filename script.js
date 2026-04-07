@@ -37,3 +37,19 @@ window.addEventListener('scroll', () => {
         navbar.style.background = "linear-gradient(to right, #0b0f19, #1f7a8c)";
     }
 });
+// Simple animation when page loads
+
+document.addEventListener("DOMContentLoaded", () => {
+    const boxes = document.querySelectorAll(".box");
+
+    boxes.forEach((box, index) => {
+        box.style.opacity = "0";
+        box.style.transform = "translateY(20px)";
+
+        setTimeout(() => {
+            box.style.transition = "all 0.5s ease";
+            box.style.opacity = "1";
+            box.style.transform = "translateY(0)";
+        }, index * 200);
+    });
+});
