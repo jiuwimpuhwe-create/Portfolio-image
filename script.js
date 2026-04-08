@@ -27,6 +27,7 @@ const resumeBtn = document.querySelector('.resume-btn');
 resumeBtn.addEventListener('click', () => {
     window.open("resume.pdf", "_blank");
 });
+
 / Navbar scroll effect
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
@@ -52,4 +53,20 @@ document.addEventListener("DOMContentLoaded", () => {
             box.style.transform = "translateY(0)";
         }, index * 200);
     });
+});
+// Simple animation effect when page loads
+
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll("img");
+
+  images.forEach((img, index) => {
+    img.style.opacity = 0;
+    img.style.transform = "translateY(20px)";
+
+    setTimeout(() => {
+      img.style.transition = "all 0.6s ease";
+      img.style.opacity = 1;
+      img.style.transform = "translateY(0)";
+    }, index * 200);
+  });
 });
